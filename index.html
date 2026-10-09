@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENEDICTA DECO ENJ - Entretien, Nettoyage & Décoration | Lomé, Togo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#1E40AF',
+                        'brand-red': '#DC2626',
+                        'brand-blue-light': '#3B82F6',
+                        'brand-red-light': '#EF4444',
+                        'brand-dark': '#1F2937'
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'slide-right': 'slideRight 0.8s ease-out',
+                        'rotate-slow': 'rotate 20s linear infinite',
+                        'gradient-shift': 'gradientShift 4s ease-in-out infinite'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            overflow-x: hidden;
+        }
+        
+        /* Responsive Typography - Système unifié */
+        .text-hero { font-size: clamp(2rem, 8vw, 6rem); }
+        .text-section { font-size: clamp(1.5rem, 5vw, 4rem); }
+        .text-card { font-size: clamp(1.125rem, 3vw, 1.5rem); }
+        .text-body { font-size: clamp(0.875rem, 2.5vw, 1.125rem); }
+        
+        /* Responsive Spacing - Système fluide */
+        .section-padding { padding: clamp(3rem, 8vw, 8rem) clamp(1rem, 4vw, 2rem); }
+        .card-padding { padding: clamp(1rem, 4vw, 2rem); }
+        .element-gap { gap: clamp(1rem, 3vw, 2rem); }
+        
+        /* Responsive Cards & Elements */
+        @media (max-width: 1024px) {
+            .creative-card { 
+                padding: clamp(1rem, 4vw, 2rem);
+                margin-bottom: 1.5rem;
+            }
+            .morphing-shape { 
+                width: clamp(3rem, 8vw, 6rem);
+                height: clamp(3rem, 8vw, 6rem);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .creative-hover:hover { 
+                transform: translateY(-5px) scale(1.02);
+            }
+            .floating-elements::before,
+            .floating-elements::after { 
+                opacity: 0.3;
+                width: clamp(100px, 20vw, 150px);
+                height: clamp(100px, 20vw, 150px);
+            }
+            .hero-elements { display: none; }
+        }
+        
+        @media (max-width: 640px) {
+            .creative-shadow { 
+                box-shadow: 0 8px 25px -5px rgba(30, 64, 175, 0.2);
+            }
+            .mobile-stack { 
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+        
+        /* Navigation responsive améliorée */
+        @media (max-width: 768px) {
+            .glass-effect { 
+                backdrop-filter: blur(12px);
+                background: rgba(255, 255, 255, 0.95);
+            }
+            .nav-logo { 
+                transform: scale(0.9);
+            }
+        }
+        
+        /* Boutons responsive */
+        .creative-button { 
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+            font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+            min-height: 48px; /* Accessibilité tactile */
+        }
+        
+        /* Grilles responsive intelligentes */
+        .responsive-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+        }
+        
+        .responsive-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+        }
+        
+        .responsive-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: clamp(1rem, 3vw, 1.5rem);
+        }
+        
+        /* Formulaires responsive */
+        @media (max-width: 640px) {
+            input, select, textarea { 
+                padding: 1rem;
+                font-size: 1rem;
+                min-height: 48px;
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Vidéos et médias responsive */
+        .video-container {
+            aspect-ratio: 9/16;
+            max-height: 400px;
+        }
+        
+        @media (max-width: 768px) {
+            .video-container {
+                aspect-ratio: 4/3;
+                max-height: 300px;
+            }
+        }
+        
+        /* Améliorations visuelles */
+        .smooth-corners { border-radius: clamp(0.5rem, 2vw, 1.5rem); }
+        .gentle-shadow { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+        .hover-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift:hover { transform: translateY(-4px); }
+        
+        /* Optimisations performance */
+        .will-change-transform { will-change: transform; }
+        .gpu-accelerated { transform: translateZ(0); }
+        
+        .creative-gradient { 
+            background: linear-gradient(135deg, #1E40AF 0%, #DC2626 50%, #3B82F6 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        .creative-gradient-reverse { 
+            background: linear-gradient(135deg, #DC2626 0%, #1E40AF 50%, #EF4444 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite reverse;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .creative-shadow {
+            box-shadow: 0 25px 50px -12px rgba(30, 64, 175, 0.25), 0 0 0 1px rgba(220, 38, 38, 0.1);
+        }
+        
+        .creative-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .creative-hover:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 35px 60px -12px rgba(30, 64, 175, 0.4);
+        }
+        
+        .morphing-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: morph 8s ease-in-out infinite;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #1E40AF, #DC2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .floating-elements::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, rgba(30, 64, 175, 0.1), rgba(220, 38, 38, 0.1));
+            border-radius: 50%;
+            top: 10%;
+            right: 10%;
+            animation: float 6s ease-in-out infinite;
+            z-index: -1;
+        }
+        
+        .floating-elements::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(45deg, rgba(220, 38, 38, 0.1), rgba(30, 64, 175, 0.1));
+            border-radius: 50%;
+            bottom: 20%;
+            left: 5%;
+            animation: float 8s ease-in-out infinite reverse;
+            z-index: -1;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        @keyframes morph {
+            0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideRight {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .creative-card {
+            background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .creative-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(30, 64, 175, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .creative-card:hover::before {
+            left: 100%;
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .neon-glow {
+            text-shadow: 0 0 5px rgba(30, 64, 175, 0.5), 0 0 10px rgba(30, 64, 175, 0.5), 0 0 15px rgba(30, 64, 175, 0.5);
+        }
+        
+        .creative-button {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(45deg, #1E40AF, #DC2626);
+            background-size: 400% 400%;
+            animation: gradientShift 3s ease infinite;
+        }
+        
+        .creative-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .creative-button:hover::before {
+            left: 100%;
+        }
+        
+        .zigzag-border {
+            position: relative;
+        }
+        
+        .zigzag-border::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: linear-gradient(45deg, transparent 33.33%, #1E40AF 33.33%, #1E40AF 66.66%, transparent 66.66%),
+                        linear-gradient(-45deg, transparent 33.33%, #DC2626 33.33%, #DC2626 66.66%, transparent 66.66%);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Creative Responsive -->
+    <nav class="glass-effect fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-18 lg:h-20">
+                <div class="flex items-center nav-logo">
+                    <div class="flex-shrink-0 relative flex items-center">
+                        <!-- Logo SVG Creative Responsive -->
+                        <div class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 mr-2 sm:mr-3 relative">
+                           <img src="image/logo.png" alt="">
+                            <div class="absolute -top-0.5 -right-0.5 w-2 h-2 sm:w-3 sm:h-3 bg-yellow-400 rounded-full animate-bounce-slow"></div>
+                        </div>
+                        <div class="min-w-0">
+                            <h1 class="text-sm sm:text-lg lg:text-xl font-black text-gradient neon-glow truncate">BENEDICTA</h1>
+                            <p class="text-xs sm:text-sm font-bold text-brand-red">DECO ENJ</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Desktop -->
+                <div class="hidden lg:block">
+                    <div class="flex items-center space-x-6">
+                        <a href="#accueil" class="text-gray-700 hover:text-brand-blue px-4 py-2 smooth-corners hover:bg-white hover:bg-opacity-20 transition-all duration-300 font-medium">Accueil</a>
+                        <a href="#apropos" class="text-gray-700 hover:text-brand-red px-4 py-2 smooth-corners hover:bg-white hover:bg-opacity-20 transition-all duration-300 font-medium">À propos</a>
+                        <a href="#services" class="text-gray-700 hover:text-brand-blue px-4 py-2 smooth-corners hover:bg-white hover:bg-opacity-20 transition-all duration-300 font-medium">Services</a>
+                        <a href="#contact" class="creative-button text-white px-6 py-2 smooth-corners font-bold hover:scale-105 transition-all duration-300">
+                            <i class="fas fa-phone mr-2"></i>Contact
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Bouton Menu Mobile -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-brand-blue transition-colors p-2 smooth-corners hover:bg-white hover:bg-opacity-20">
+                        <i class="fas fa-bars text-lg sm:text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menu Mobile Amélioré -->
+        <div id="mobile-menu" class="lg:hidden hidden glass-effect border-t border-white border-opacity-20 backdrop-blur-xl">
+            <div class="px-4 py-6 space-y-3">
+                <a href="#accueil" class="block px-4 py-3 text-gray-700 hover:text-brand-blue smooth-corners hover:bg-white hover:bg-opacity-20 transition-all font-medium">
+                    <i class="fas fa-home mr-3 text-brand-blue"></i>Accueil
+                </a>
+                <a href="#apropos" class="block px-4 py-3 text-gray-700 hover:text-brand-red smooth-corners hover:bg-white hover:bg-opacity-20 transition-all font-medium">
+                    <i class="fas fa-info-circle mr-3 text-brand-red"></i>À propos
+                </a>
+                <a href="#services" class="block px-4 py-3 text-gray-700 hover:text-brand-blue smooth-corners hover:bg-white hover:bg-opacity-20 transition-all font-medium">
+                    <i class="fas fa-cogs mr-3 text-brand-blue"></i>Services
+                </a>
+                <a href="#contact" class="block px-4 py-3 text-gray-700 hover:text-brand-red smooth-corners hover:bg-white hover:bg-opacity-20 transition-all font-medium">
+                    <i class="fas fa-envelope mr-3 text-brand-red"></i>Contact
+                </a>
+                <div class="pt-4 border-t border-white border-opacity-20">
+                    <button onclick="scrollToContact()" class="w-full creative-button text-white py-3 smooth-corners font-bold hover:scale-105 transition-all duration-300">
+                        <i class="fas fa-phone mr-2"></i>Devis Gratuit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Creative Responsive -->
+    <section id="accueil" class="creative-gradient text-white pt-16 sm:pt-18 lg:pt-20 relative overflow-hidden floating-elements">
+        <!-- Éléments décoratifs responsifs -->
+        <div class="absolute inset-0 opacity-10 hero-elements">
+            <div class="absolute top-20 left-4 sm:left-10 morphing-shape bg-white animate-rotate-slow" style="width: clamp(4rem, 8vw, 8rem); height: clamp(4rem, 8vw, 8rem);"></div>
+            <div class="absolute bottom-20 right-4 sm:right-10 morphing-shape bg-white animate-bounce-slow" style="width: clamp(3rem, 6vw, 6rem); height: clamp(3rem, 6vw, 6rem);"></div>
+            <div class="absolute top-1/2 left-1/4 bg-white rounded-full animate-pulse-slow" style="width: clamp(2rem, 4vw, 4rem); height: clamp(2rem, 4vw, 4rem);"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto section-padding relative z-10">
+            <div class="text-center">
+                <div class="animate-slide-up">
+                    <h1 class="text-hero font-black mb-6 sm:mb-8 leading-tight will-change-transform">
+                        <span class="block">BENEDICTA</span>
+                        <span class="block text-yellow-300">DECO ENJ</span>
+                    </h1>
+                    <div class="bg-yellow-300 mx-auto mb-6 sm:mb-8 smooth-corners" style="width: clamp(5rem, 15vw, 8rem); height: clamp(0.25rem, 1vw, 0.5rem);"></div>
+                </div>
+                
+                <div class="animate-slide-up" style="animation-delay: 0.2s;">
+                    <p class="text-body mb-8 sm:mb-12 max-w-4xl mx-auto font-light leading-relaxed px-4">
+                        Votre partenaire de confiance pour l'<span class="font-bold text-yellow-300">entretien</span>, 
+                        le <span class="font-bold text-yellow-300">nettoyage</span> et la 
+                        <span class="font-bold text-yellow-300">décoration</span> de vos espaces.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row element-gap justify-center animate-slide-up px-4 mobile-stack" style="animation-delay: 0.4s;">
+                    <button onclick="scrollToContact()" class="creative-button text-white smooth-corners font-bold hover:scale-105 transition-all duration-300 gentle-shadow will-change-transform">
+                        <i class="fas fa-phone mr-2"></i>Contactez-nous
+                    </button>
+                    <button onclick="scrollToContact()" class="glass-effect border-2 border-white text-white smooth-corners font-bold hover:bg-white hover:text-brand-blue transition-all duration-300 will-change-transform" style="padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem); min-height: 48px;">
+                        <i class="fas fa-calculator mr-2"></i>Devis Gratuit
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hero Visual Elements Responsive -->
+        <div class="relative section-padding zigzag-border">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="responsive-grid-3">
+                    <div class="text-center creative-hover hover-lift will-change-transform">
+                        <div class="creative-gradient-reverse smooth-corners flex items-center justify-center mx-auto mb-4 sm:mb-6 morphing-shape" style="width: clamp(5rem, 12vw, 8rem); height: clamp(5rem, 12vw, 8rem);">
+                            <i class="fas fa-broom text-white" style="font-size: clamp(1.5rem, 4vw, 3rem);"></i>
+                        </div>
+                        <h3 class="text-card font-bold mb-3 sm:mb-4">Nettoyage Expert</h3>
+                        <p class="text-body opacity-90 px-2">Solutions professionnelles pour tous vos besoins</p>
+                    </div>
+                    
+                    <div class="text-center creative-hover hover-lift will-change-transform" style="animation-delay: 0.2s;">
+                        <div class="creative-gradient smooth-corners flex items-center justify-center mx-auto mb-4 sm:mb-6 morphing-shape" style="width: clamp(5rem, 12vw, 8rem); height: clamp(5rem, 12vw, 8rem);">
+                            <i class="fas fa-tools text-white" style="font-size: clamp(1.5rem, 4vw, 3rem);"></i>
+                        </div>
+                        <h3 class="text-card font-bold mb-3 sm:mb-4">Entretien Premium</h3>
+                        <p class="text-body opacity-90 px-2">Maintenance régulière et ponctuelle</p>
+                    </div>
+                    
+                    <div class="text-center creative-hover hover-lift will-change-transform" style="animation-delay: 0.4s;">
+                        <div class="creative-gradient-reverse smooth-corners flex items-center justify-center mx-auto mb-4 sm:mb-6 morphing-shape" style="width: clamp(5rem, 12vw, 8rem); height: clamp(5rem, 12vw, 8rem);">
+                            <i class="fas fa-paint-brush text-white" style="font-size: clamp(1.5rem, 4vw, 3rem);"></i>
+                        </div>
+                        <h3 class="text-card font-bold mb-3 sm:mb-4">Décoration Créative</h3>
+                        <p class="text-body opacity-90 px-2">Transformez vos espaces avec style</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos Section Creative -->
+    <section id="apropos" class="py-16 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-10 right-4 sm:right-10 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 creative-gradient rounded-full animate-pulse-slow"></div>
+            <div class="absolute bottom-10 left-4 sm:left-10 w-24 h-24 sm:w-36 sm:h-36 lg:w-48 lg:h-48 creative-gradient-reverse rounded-full animate-float"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 sm:mb-16 lg:mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-gradient mb-4 sm:mb-6">À propos de nous</h2>
+                <div class="w-20 sm:w-32 h-1 sm:h-2 creative-gradient mx-auto rounded-full mb-6 sm:mb-8"></div>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">Découvrez l'histoire et la passion qui nous animent</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+                <div class="animate-slide-right">
+                    <div class="creative-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 creative-hover">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-brand-blue mb-6 sm:mb-8">Notre Histoire & Mission</h3>
+                        <p class="text-gray-700 mb-4 sm:mb-6 text-base sm:text-lg leading-relaxed">
+                            <span class="font-bold text-brand-red">BENEDICTA DECO ENJ</span> est née d'une passion pour l'excellence et la transformation des espaces. Basée à <span class="font-semibold text-brand-blue">Lomé, Togo</span>, notre entreprise révolutionne les standards de l'entretien, du nettoyage et de la décoration.
+                        </p>
+                        <p class="text-gray-700 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed">
+                            Notre équipe de professionnels créatifs et expérimentés s'engage à dépasser vos attentes, en alliant innovation, qualité et respect de l'environnement.
+                        </p>
+                        
+                        <!-- Images des travailleurs en action -->
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="relative group">
+                                <div class="creative-card rounded-xl overflow-hidden creative-hover">
+                                    <img src="image/5812246927075558950_120.jpg" alt="">
+                                    <div class="absolute inset-0 bg-brand-blue bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Nettoyage Pro</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative group">
+                                <div class="creative-card rounded-xl overflow-hidden creative-hover">
+                                   <img src="image/5812246927075558945_120.jpg" alt="">
+                                    <div class="absolute inset-0 bg-brand-red bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Entretien</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 sm:gap-6">
+                            <div class="text-center p-4 sm:p-6 creative-gradient rounded-xl sm:rounded-2xl text-white creative-hover">
+                                <div class="text-2xl sm:text-3xl lg:text-4xl font-black mb-1 sm:mb-2">5+</div>
+                                <div class="text-xs sm:text-sm font-medium">Années d'Excellence</div>
+                            </div>
+                            <div class="text-center p-4 sm:p-6 creative-gradient-reverse rounded-xl sm:rounded-2xl text-white creative-hover">
+                                <div class="text-2xl sm:text-3xl lg:text-4xl font-black mb-1 sm:mb-2">200+</div>
+                                <div class="text-xs sm:text-sm font-medium">Clients Ravis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animate-slide-up mt-8 lg:mt-0">
+                    <div class="creative-gradient rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 text-white relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-16 h-16 sm:w-24 sm:h-24 lg:w-32 lg:h-32 bg-white bg-opacity-10 rounded-full -mr-8 sm:-mr-12 lg:-mr-16 -mt-8 sm:-mt-12 lg:-mt-16"></div>
+                        <div class="absolute bottom-0 left-0 w-12 h-12 sm:w-18 sm:h-18 lg:w-24 lg:h-24 bg-white bg-opacity-10 rounded-full -ml-6 sm:-ml-9 lg:-ml-12 -mb-6 sm:-mb-9 lg:-mb-12"></div>
+                        
+                        <h3 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 relative z-10">Nos Valeurs</h3>
+                        <div class="space-y-4 sm:space-y-6 relative z-10">
+                            <div class="flex items-center group">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3 sm:mr-4 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-star text-lg sm:text-xl"></i>
+                                </div>
+                                <span class="text-base sm:text-lg font-medium">Excellence & Innovation</span>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3 sm:mr-4 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-leaf text-lg sm:text-xl"></i>
+                                </div>
+                                <span class="text-base sm:text-lg font-medium">Respect de l'Environnement</span>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3 sm:mr-4 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-heart text-lg sm:text-xl"></i>
+                                </div>
+                                <span class="text-base sm:text-lg font-medium">Satisfaction Client</span>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-3 sm:mr-4 group-hover:scale-110 transition-transform">
+                                    <i class="fas fa-handshake text-lg sm:text-xl"></i>
+                                </div>
+                                <span class="text-base sm:text-lg font-medium">Partenariat de Confiance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section Ultra Creative Responsive -->
+    <section id="services" class="section-padding creative-gradient-reverse relative overflow-hidden">
+        <!-- Éléments décoratifs responsifs -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-4 bg-white rounded-full animate-bounce-slow" style="width: clamp(5rem, 10vw, 10rem); height: clamp(5rem, 10vw, 10rem);"></div>
+            <div class="absolute bottom-10 right-4 bg-white morphing-shape animate-rotate-slow" style="width: clamp(4rem, 8vw, 8rem); height: clamp(4rem, 8vw, 8rem);"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-5 rounded-full animate-pulse-slow" style="width: clamp(8rem, 16vw, 16rem); height: clamp(8rem, 16vw, 16rem);"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 sm:mb-16 lg:mb-20">
+                <h2 class="text-section font-black text-white mb-4 sm:mb-6">Nos Services</h2>
+                <div class="bg-yellow-300 mx-auto smooth-corners mb-6 sm:mb-8" style="width: clamp(5rem, 15vw, 8rem); height: clamp(0.25rem, 1vw, 0.5rem);"></div>
+                <p class="text-body text-white opacity-90 max-w-3xl mx-auto px-4">Des solutions créatives et professionnelles pour tous vos besoins</p>
+            </div>
+            
+            <div class="responsive-grid-3">
+                <!-- Service 1: Entretien -->
+                <div class="creative-card smooth-corners card-padding creative-hover hover-lift group will-change-transform">
+                    <div class="relative mb-6 sm:mb-8">
+                        <div class="creative-gradient smooth-corners flex items-center justify-center mx-auto morphing-shape group-hover:scale-110 transition-transform duration-500" style="width: clamp(4rem, 10vw, 6rem); height: clamp(4rem, 10vw, 6rem);">
+                            <i class="fas fa-tools text-white" style="font-size: clamp(1.25rem, 3vw, 2rem);"></i>
+                        </div>
+                        <div class="absolute -top-1 -right-1 bg-brand-red rounded-full animate-pulse-slow" style="width: clamp(1rem, 2vw, 1.5rem); height: clamp(1rem, 2vw, 1.5rem);"></div>
+                    </div>
+                    <h3 class="text-card font-bold text-brand-blue mb-4 sm:mb-6 text-center">Entretien Professionnel</h3>
+                    <p class="text-gray-700 mb-6 sm:mb-8 text-center leading-relaxed text-body">Solutions d'entretien sur mesure pour préserver et valoriser vos espaces avec expertise.</p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center p-3 bg-gray-50 smooth-corners hover:bg-brand-blue hover:text-white transition-all duration-300 group/item">
+                            <i class="fas fa-check-circle text-brand-blue group-hover/item:text-white mr-3 flex-shrink-0"></i>
+                            <span class="font-medium text-sm">Entretien régulier personnalisé</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 smooth-corners hover:bg-brand-blue hover:text-white transition-all duration-300 group/item">
+                            <i class="fas fa-check-circle text-brand-blue group-hover/item:text-white mr-3 flex-shrink-0"></i>
+                            <span class="font-medium text-sm">Interventions d'urgence</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 smooth-corners hover:bg-brand-blue hover:text-white transition-all duration-300 group/item">
+                            <i class="fas fa-check-circle text-brand-blue group-hover/item:text-white mr-3 flex-shrink-0"></i>
+                            <span class="font-medium text-sm">Espaces commerciaux & résidentiels</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full mt-6 creative-button text-white smooth-corners font-bold hover:scale-105 transition-all duration-300">
+                        En savoir plus
+                    </button>
+                </div>
+
+                <!-- Service 2: Nettoyage (Populaire) -->
+                <div class="creative-card smooth-corners card-padding creative-hover hover-lift group transform scale-105 lg:scale-110 will-change-transform relative">
+                    <!-- Badge populaire -->
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-brand-blue text-xs font-bold px-3 py-1 smooth-corners z-10">
+                        ⭐ POPULAIRE
+                    </div>
+                    
+                    <div class="relative mb-6 sm:mb-8 pt-4">
+                        <div class="creative-gradient-reverse smooth-corners flex items-center justify-center mx-auto morphing-shape group-hover:scale-110 transition-transform duration-500" style="width: clamp(4rem, 10vw, 6rem); height: clamp(4rem, 10vw, 6rem);">
+                            <i class="fas fa-broom text-white" style="font-size: clamp(1.25rem, 3vw, 2rem);"></i>
+                        </div>
+                        <div class="absolute -top-1 -right-1 bg-yellow-400 rounded-full animate-pulse-slow" style="width: clamp(1rem, 2vw, 1.5rem); height: clamp(1rem, 2vw, 1.5rem);"></div>
+                    </div>
+                    <h3 class="text-card font-bold text-brand-red mb-4 sm:mb-6 text-center">Nettoyage Spécialisé</h3>
+                    <p class="text-gray-700 mb-6 sm:mb-8 text-center leading-relaxed text-body">Techniques avancées de nettoyage pour une propreté impeccable et durable.</p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center p-3 bg-gray-50 smooth-corners hover:bg-brand-red hover:text-white transition-all duration-300 group/item">
+                            <i class="fas fa-check-circle text-brand-red group-hover/item:text-white mr-3 flex-shrink-0"></i>
+                            <span class="font-medium text-sm">Nettoyage haute pression</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 smooth-corners hover:bg-brand-red hover:text-white transition-all duration-300 group/item">
+                            <i class="fas fa-check-circle text-brand-red group-hover/item:text-white mr-3 flex-shrink-0"></i>
+                            <span class="font-medium text-sm">Vitres & surfaces délicates</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 smooth-corners hover:bg-brand-red hover:text-white transition-all duration-300 group/item">
+                            <i class="fas fa-check-circle text-brand-red group-hover/item:text-white mr-3 flex-shrink-0"></i>
+                            <span class="font-medium text-sm">Désinfection professionnelle</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full mt-6 creative-button text-white smooth-corners font-bold hover:scale-105 transition-all duration-300">
+                        Choisir ce service
+                    </button>
+                </div>
+
+                <!-- Service 3: Décoration -->
+                <div class="creative-card smooth-corners card-padding creative-hover hover-lift group will-change-transform">
+                    <div class="relative mb-6 sm:mb-8">
+                        <div class="creative-gradient smooth-corners flex items-center justify-center mx-auto morphing-shape group-hover:scale-110 transition-transform duration-500" style="width: clamp(4rem, 10vw, 6rem); height: clamp(4rem, 10vw, 6rem);">
+                            <i class="fas fa-paint-brush text-white" style="font-size: clamp(1.25rem, 3vw, 2rem);"></i>
+                        </div>
+                        <div class="absolute -top-1 -right-1 bg-brand-blue rounded-full animate-pulse-slow" style="width: clamp(1rem, 2vw, 1.5rem); height: clamp(1rem, 2vw, 1.5rem);"></div>
+                    </div>
+                    <h3 class="text-card font-bold text-brand-blue mb-4 sm:mb-6 text-center">Décoration Créative</h3>
+                    <p class="text-gray-700 mb-6 sm:mb-8 text-center leading-relaxed text-body">Conception et réalisation de décors uniques qui reflètent votre personnalité.</p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center p-3 bg-gray-50 smooth-corners hover:bg-brand-blue hover:text-white transition-all duration-300 group/item">
+                            <i class="fas fa-check-circle text-brand-blue group-hover/item:text-white mr-3 flex-shrink-0"></i>
+                            <span class="font-medium text-sm">Design d'intérieur moderne</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 smooth-corners hover:bg-brand-blue hover:text-white transition-all duration-300 group/item">
+                            <i class="fas fa-check-circle text-brand-blue group-hover/item:text-white mr-3 flex-shrink-0"></i>
+                            <span class="font-medium text-sm">Événements & célébrations</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-50 smooth-corners hover:bg-brand-blue hover:text-white transition-all duration-300 group/item">
+                            <i class="fas fa-check-circle text-brand-blue group-hover/item:text-white mr-3 flex-shrink-0"></i>
+                            <span class="font-medium text-sm">Conseils personnalisés</span>
+                        </div>
+                    </div>
+                    
+                    <button class="w-full mt-6 creative-button text-white smooth-corners font-bold hover:scale-105 transition-all duration-300">
+                        Découvrir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipe en Action Section -->
+    <section class="py-16 sm:py-24 lg:py-32 bg-gray-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 sm:mb-16 lg:mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gradient mb-4 sm:mb-6">Notre Équipe en Action</h2>
+                <div class="w-20 sm:w-32 h-1 sm:h-2 creative-gradient mx-auto rounded-full mb-6 sm:mb-8"></div>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">Découvrez nos professionnels à l'œuvre</p>
+            </div>
+            
+            <!-- Section Vidéos Témoignages Terrain -->
+            <div class="mb-16 sm:mb-20">
+                <div class="text-center mb-8 sm:mb-12">
+                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-brand-blue mb-4">🎬 Nos Équipes sur le Terrain</h3>
+                    <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">Découvrez nos professionnels en action à travers des vidéos authentiques de nos interventions</p>
+                </div>
+                
+                <div class="responsive-grid-3 mb-12">
+                    <!-- Vidéo Terrain 1 - Équipe Entretien -->
+                    <div class="creative-card smooth-corners overflow-hidden creative-hover hover-lift group relative will-change-transform">
+                        <div class="video-container relative bg-gradient-to-br from-blue-50 to-blue-100">
+                          <video src="video/entretien.MP4" autoplay loop muted playsinline></video>
+
+                            <!-- Overlay de lecture -->
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                                <div class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:scale-110">
+                                    <i class="fas fa-play text-brand-blue text-xl ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-padding">
+                            <h4 class="text-card font-bold text-brand-blue mb-2">🔧 Équipe Entretien</h4>
+                            <p class="text-gray-600 text-body mb-2">Intervention maintenance bureau</p>
+                            <p class="text-gray-500 text-sm">"Nos experts en action sur le terrain"</p>
+                        </div>
+                    </div>
+
+                    <!-- Vidéo Terrain 2 - Équipe Nettoyage -->
+                    <div class="creative-card smooth-corners overflow-hidden creative-hover hover-lift group relative will-change-transform">
+                        <div class="video-container relative bg-gradient-to-br from-green-50 to-green-100">
+                            
+                                <defs>
+                                    <linearGradient id="workBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#E8F5E8"/>
+                                        <stop offset="50%" style="stop-color:#C8E6C9"/>
+                                        <stop offset="100%" style="stop-color:#A5D6A7"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="300" height="533" fill="url(#workBg2)"/>
+                                
+                                <!-- Chantier de nettoyage -->
+                                <rect x="0" y="0" width="300" height="250" fill="#F0F8FF"/>
+                                <rect x="20" y="60" width="260" height="140" fill="#FFF" stroke="#2196F3" stroke-width="3" rx="20"/>
+                                
+                                <!-- Équipe de nettoyage (2 personnes) -->
+                                <g>
+                                    <!-- Nettoyeur 1 avec aspirateur -->
+                                    <circle cx="120" cy="330" r="25" fill="#8D6E63" filter="url(#dropShadow)"/>
+                                    <rect x="105" y="355" width="30" height="50" fill="#2196F3" rx="10"/>
+                                    <rect x="100" y="405" width="15" height="30" fill="#424242"/>
+                                    <rect x="125" y="405" width="15" height="30" fill="#424242"/>
+                                    
+                                    <!-- Nettoyeur 2 avec serpillière -->
+                                    <circle cx="180" cy="340" r="25" fill="#D2B48C" filter="url(#dropShadow)"/>
+                                    <rect x="165" y="365" width="30" height="50" fill="#2196F3" rx="10"/>
+                                    <rect x="160" y="415" width="15" height="30" fill="#424242"/>
+                                    <rect x="185" y="415" width="15" height="30" fill="#424242"/>
+                                </g>
+                                
+                                <!-- Aspirateur -->
+                                <rect x="80" y="450" width="30" height="40" fill="#37474F" rx="8"/>
+                                <circle cx="85" cy="490" r="8" fill="#424242"/>
+                                <circle cx="105" cy="490" r="8" fill="#424242"/>
+                                <rect x="95" y="440" width="4" height="20" fill="#666"/>
+                                
+                                <!-- Serpillière et seau -->
+                                <rect x="200" y="300" width="3" height="50" fill="#8D6E63"/>
+                                <ellipse cx="201" cy="295" rx="8" ry="12" fill="#FFB74D"/>
+                                <ellipse cx="230" cy="460" rx="15" ry="12" fill="#37474F"/>
+                                <rect x="225" y="448" width="10" height="12" fill="#2196F3"/>
+                                
+                                <!-- Bulles de savon animées -->
+                                <g class="animate-float">
+                                    <circle cx="150" cy="200" r="4" fill="white" opacity="0.8"/>
+                                    <circle cx="130" cy="180" r="3" fill="white" opacity="0.6"/>
+                                    <circle cx="170" cy="160" r="2" fill="white" opacity="0.7"/>
+                                    <circle cx="140" cy="140" r="2.5" fill="white" opacity="0.5"/>
+                                    <circle cx="160" cy="120" r="1.5" fill="white" opacity="0.6"/>
+                                </g>
+                                
+
+                            <video src="video/netoyage.mp4"  autoplay loop muted playsinline></video>
+                            
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                                <div class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:scale-110">
+                                    <i class="fas fa-play text-brand-red text-xl ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-padding">
+                            <h4 class="text-card font-bold text-brand-red mb-2">🧹 Équipe Nettoyage</h4>
+                            <p class="text-gray-600 text-body mb-2">Nettoyage professionnel en cours</p>
+                            <p class="text-gray-500 text-sm">"Techniques avancées en action"</p>
+                        </div>
+                    </div>
+
+                    <!-- Vidéo Terrain 3 - Équipe Décoration -->
+                    <div class="creative-card smooth-corners overflow-hidden creative-hover hover-lift group relative will-change-transform">
+                        <div class="video-container relative bg-gradient-to-br from-purple-50 to-purple-100">
+                            <video src="video/decoration.mp4" autoplay loop muted playsinline></video>
+                            
+                            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                                <div class="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity transform group-hover:scale-110">
+                                    <i class="fas fa-play text-purple-600 text-xl ml-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-padding">
+                            <h4 class="text-card font-bold text-purple-600 mb-2">🎨 Équipe Décoration</h4>
+                            <p class="text-gray-600 text-body mb-2">Création artistique en cours</p>
+                            <p class="text-gray-500 text-sm">"Art et créativité sur le terrain"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call to Action Terrain -->
+                <div class="text-center">
+                    <div class="creative-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto">
+                        <h4 class="text-xl sm:text-2xl font-bold text-brand-blue mb-4">🎬 Découvrez nos équipes en action !</h4>
+                        <p class="text-gray-600 mb-6">Nos professionnels travaillent avec passion et expertise. Contactez-nous pour bénéficier de leur savoir-faire exceptionnel !</p>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <button onclick="scrollToContact()" class="creative-button text-white px-6 py-3 rounded-xl font-bold hover:scale-105 transition-all duration-300">
+                                <i class="fas fa-video mr-2"></i>Voir plus de vidéos
+                            </button>
+                            <button onclick="scrollToContact()" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:scale-105 transition-all duration-300">
+                                <i class="fas fa-phone mr-2"></i>Demander intervention
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
+                <!-- Équipe Entretien -->
+                <div class="creative-card rounded-2xl sm:rounded-3xl overflow-hidden creative-hover group">
+                    <div class="relative">
+                        <svg viewBox="0 0 400 300" class="w-full h-48 sm:h-56">
+                            <defs>
+                                <linearGradient id="maintenanceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#E8F5E8"/>
+                                    <stop offset="100%" style="stop-color:#C8E6C9"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#maintenanceBg)"/>
+                            <!-- Sol -->
+                            <rect x="0" y="250" width="400" height="50" fill="#BCAAA4"/>
+                            <!-- Mur -->
+                            <rect x="0" y="0" width="400" height="250" fill="#F5F5F5"/>
+                            <!-- Travailleur principal -->
+                            <circle cx="200" cy="180" r="30" fill="#8D6E63"/>
+                            <rect x="185" y="210" width="30" height="50" fill="#1976D2" rx="8"/>
+                            <rect x="175" y="260" width="15" height="30" fill="#424242"/>
+                            <rect x="210" y="260" width="15" height="30" fill="#424242"/>
+                            <!-- Outils -->
+                            <rect x="240" y="170" width="4" height="80" fill="#8D6E63"/>
+                            <rect x="235" y="245" width="14" height="10" fill="#FF9800"/>
+                            <!-- Équipement -->
+                            <rect x="120" y="220" width="40" height="30" fill="#37474F" rx="5"/>
+                            <circle cx="130" cy="250" r="8" fill="#424242"/>
+                            <circle cx="150" cy="250" r="8" fill="#424242"/>
+                            <!-- Particules de travail -->
+                            <circle cx="260" cy="200" r="2" fill="#4CAF50" opacity="0.7"/>
+                            <circle cx="270" cy="190" r="1.5" fill="#4CAF50" opacity="0.5"/>
+                            <circle cx="255" cy="210" r="1" fill="#4CAF50" opacity="0.6"/>
+                        </svg>
+                        <div class="absolute inset-0 bg-brand-blue bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <div class="text-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fas fa-tools text-3xl mb-2"></i>
+                                <p class="font-bold">Entretien Expert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-brand-blue mb-2">Équipe Entretien</h3>
+                        <p class="text-gray-600 text-sm sm:text-base">Maintenance professionnelle avec équipements de pointe</p>
+                    </div>
+                </div>
+
+                <!-- Équipe Nettoyage -->
+                <div class="creative-card rounded-2xl sm:rounded-3xl overflow-hidden creative-hover group">
+                    <div class="relative">
+                        <svg viewBox="0 0 400 300" class="w-full h-48 sm:h-56">
+                            <defs>
+                                <linearGradient id="cleaningBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#E3F2FD"/>
+                                    <stop offset="100%" style="stop-color:#BBDEFB"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#cleaningBg)"/>
+                            <!-- Sol -->
+                            <rect x="0" y="250" width="400" height="50" fill="#90A4AE"/>
+                            <!-- Fenêtre -->
+                            <rect x="50" y="50" width="120" height="100" fill="#E1F5FE" stroke="#0277BD" stroke-width="3"/>
+                            <line x1="110" y1="50" x2="110" y2="150" stroke="#0277BD" stroke-width="2"/>
+                            <line x1="50" y1="100" x2="170" y2="100" stroke="#0277BD" stroke-width="2"/>
+                            <!-- Travailleur nettoyage -->
+                            <circle cx="250" cy="180" r="30" fill="#8D6E63"/>
+                            <rect x="235" y="210" width="30" height="50" fill="#2196F3" rx="8"/>
+                            <rect x="225" y="260" width="15" height="30" fill="#424242"/>
+                            <rect x="260" y="260" width="15" height="30" fill="#424242"/>
+                            <!-- Seau et serpillière -->
+                            <ellipse cx="320" cy="240" rx="20" ry="15" fill="#37474F"/>
+                            <rect x="315" y="225" width="10" height="15" fill="#2196F3"/>
+                            <rect x="280" y="160" width="3" height="70" fill="#8D6E63"/>
+                            <ellipse cx="281" cy="155" rx="8" ry="12" fill="#FFB74D"/>
+                            <!-- Bulles de savon -->
+                            <circle cx="200" cy="120" r="4" fill="white" opacity="0.8"/>
+                            <circle cx="180" cy="110" r="3" fill="white" opacity="0.6"/>
+                            <circle cx="220" cy="100" r="2" fill="white" opacity="0.7"/>
+                            <circle cx="190" cy="90" r="2.5" fill="white" opacity="0.5"/>
+                        </svg>
+                        <div class="absolute inset-0 bg-brand-red bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <div class="text-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fas fa-broom text-3xl mb-2"></i>
+                                <p class="font-bold">Nettoyage Pro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-brand-red mb-2">Équipe Nettoyage</h3>
+                        <p class="text-gray-600 text-sm sm:text-base">Techniques avancées pour une propreté impeccable</p>
+                    </div>
+                </div>
+
+                <!-- Équipe Décoration -->
+                <div class="creative-card rounded-2xl sm:rounded-3xl overflow-hidden creative-hover group md:col-span-2 lg:col-span-1">
+                    <div class="relative">
+                        <svg viewBox="0 0 400 300" class="w-full h-48 sm:h-56">
+                            <defs>
+                                <linearGradient id="decorationBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FCE4EC"/>
+                                    <stop offset="100%" style="stop-color:#F8BBD9"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="400" height="300" fill="url(#decorationBg)"/>
+                            <!-- Mur à décorer -->
+                            <rect x="0" y="0" width="400" height="250" fill="#FAFAFA"/>
+                            <!-- Motif décoratif en cours -->
+                            <path d="M50 100 Q100 50 150 100 T250 100" stroke="#E91E63" stroke-width="4" fill="none"/>
+                            <circle cx="80" cy="80" r="8" fill="#2196F3"/>
+                            <circle cx="180" cy="80" r="8" fill="#4CAF50"/>
+                            <!-- Travailleur décorateur -->
+                            <circle cx="200" cy="180" r="30" fill="#8D6E63"/>
+                            <rect x="185" y="210" width="30" height="50" fill="#E91E63" rx="8"/>
+                            <rect x="175" y="260" width="15" height="30" fill="#424242"/>
+                            <rect x="210" y="260" width="15" height="30" fill="#424242"/>
+                            <!-- Pinceau en action -->
+                            <rect x="240" y="150" width="2" height="50" fill="#8D6E63"/>
+                            <ellipse cx="241" cy="145" rx="5" ry="10" fill="#FF9800"/>
+                            <!-- Palette -->
+                            <ellipse cx="320" cy="200" rx="25" ry="15" fill="white"/>
+                            <circle cx="310" cy="195" r="4" fill="#2196F3"/>
+                            <circle cx="330" cy="195" r="4" fill="#E91E63"/>
+                            <circle cx="320" cy="205" r="4" fill="#4CAF50"/>
+                            <circle cx="315" cy="185" r="4" fill="#FF9800"/>
+                            <!-- Échelle -->
+                            <rect x="120" y="150" width="8" height="100" fill="#8D6E63"/>
+                            <rect x="140" y="150" width="8" height="100" fill="#8D6E63"/>
+                            <rect x="120" y="170" width="28" height="3" fill="#8D6E63"/>
+                            <rect x="120" y="190" width="28" height="3" fill="#8D6E63"/>
+                            <rect x="120" y="210" width="28" height="3" fill="#8D6E63"/>
+                        </svg>
+                        <div class="absolute inset-0 bg-purple-600 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+                            <div class="text-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fas fa-paint-brush text-3xl mb-2"></i>
+                                <p class="font-bold">Décoration Créative</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold text-purple-600 mb-2">Équipe Décoration</h3>
+                        <p class="text-gray-600 text-sm sm:text-base">Artistes créatifs pour des espaces uniques</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages Section Creative -->
+    <section class="py-16 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 25% 25%, #1E40AF 0%, transparent 50%), radial-gradient(circle at 75% 75%, #DC2626 0%, transparent 50%);"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 sm:mb-16 lg:mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gradient mb-4 sm:mb-6">Pourquoi Nous Choisir ?</h2>
+                <div class="w-20 sm:w-32 h-1 sm:h-2 creative-gradient mx-auto rounded-full mb-6 sm:mb-8"></div>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">Des avantages qui font toute la différence</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center creative-hover group">
+                    <div class="w-32 h-32 creative-gradient rounded-3xl flex items-center justify-center mx-auto mb-6 morphing-shape group-hover:scale-110 transition-all duration-500">
+                        <i class="fas fa-rocket text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-blue mb-4">Rapidité Éclair</h3>
+                    <p class="text-gray-600 leading-relaxed">Interventions rapides sans compromis sur la qualité exceptionnelle</p>
+                </div>
+                
+                <div class="text-center creative-hover group">
+                    <div class="w-32 h-32 creative-gradient-reverse rounded-3xl flex items-center justify-center mx-auto mb-6 morphing-shape group-hover:scale-110 transition-all duration-500">
+                        <i class="fas fa-gem text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-red mb-4">Qualité Premium</h3>
+                    <p class="text-gray-600 leading-relaxed">Standards élevés et satisfaction client garantie à 100%</p>
+                </div>
+                
+                <div class="text-center creative-hover group">
+                    <div class="w-32 h-32 creative-gradient rounded-3xl flex items-center justify-center mx-auto mb-6 morphing-shape group-hover:scale-110 transition-all duration-500">
+                        <i class="fas fa-magic text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-blue mb-4">Flexibilité Totale</h3>
+                    <p class="text-gray-600 leading-relaxed">Solutions sur mesure adaptées à vos besoins uniques</p>
+                </div>
+                
+                <div class="text-center creative-hover group">
+                    <div class="w-32 h-32 creative-gradient-reverse rounded-3xl flex items-center justify-center mx-auto mb-6 morphing-shape group-hover:scale-110 transition-all duration-500">
+                        <i class="fas fa-seedling text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-red mb-4">Éco-Innovation</h3>
+                    <p class="text-gray-600 leading-relaxed">Produits écologiques de pointe respectueux de l'environnement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignages Section Creative -->
+    <section class="py-32 creative-gradient relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-64 h-64 bg-white rounded-full animate-float"></div>
+            <div class="absolute bottom-10 right-10 w-48 h-48 bg-white morphing-shape animate-bounce-slow"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl md:text-7xl font-black text-white mb-6">Ils Nous Font Confiance</h2>
+                <div class="w-32 h-2 bg-yellow-300 mx-auto rounded-full mb-8"></div>
+                <p class="text-xl text-white opacity-90 max-w-3xl mx-auto">Découvrez les témoignages de nos clients ravis</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="creative-card rounded-3xl p-8 creative-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="ml-auto w-12 h-12 creative-gradient rounded-full flex items-center justify-center">
+                            <i class="fas fa-quote-right text-white"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed italic">"Une transformation magique ! L'équipe de BENEDICTA DECO ENJ a dépassé toutes nos attentes. Professionnalisme et créativité au rendez-vous."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 creative-gradient rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">MK</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-brand-blue">Marie Kouassi</div>
+                            <div class="text-sm text-gray-500">Directrice d'entreprise</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creative-card rounded-3xl p-8 creative-hover transform md:scale-105">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="ml-auto w-12 h-12 creative-gradient-reverse rounded-full flex items-center justify-center">
+                            <i class="fas fa-quote-right text-white"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed italic">"Excellent travail de décoration ! Notre maison a été transformée en véritable œuvre d'art. Équipe créative et très professionnelle."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 creative-gradient-reverse rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">JA</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-brand-red">Jean-Paul Agbodjan</div>
+                            <div class="text-sm text-gray-500">Particulier</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creative-card rounded-3xl p-8 creative-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="ml-auto w-12 h-12 creative-gradient rounded-full flex items-center justify-center">
+                            <i class="fas fa-quote-right text-white"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed italic">"Services de nettoyage exceptionnels ! Nous recommandons vivement BENEDICTA DECO ENJ pour leur innovation et leur efficacité remarquable."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 creative-gradient rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold">FS</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-brand-blue">Fatima Saliou</div>
+                            <div class="text-sm text-gray-500">Responsable d'hôtel</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section Ultra Creative Responsive -->
+    <section id="contact" class="section-padding bg-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 left-0 w-full h-full" style="background: radial-gradient(circle at 20% 80%, #1E40AF 0%, transparent 50%), radial-gradient(circle at 80% 20%, #DC2626 0%, transparent 50%), radial-gradient(circle at 40% 40%, #3B82F6 0%, transparent 50%);"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12 sm:mb-16 lg:mb-20">
+                <h2 class="text-section font-black text-gradient mb-6">Contactez-nous</h2>
+                <div class="creative-gradient mx-auto smooth-corners mb-8" style="width: clamp(5rem, 15vw, 8rem); height: clamp(0.25rem, 1vw, 0.5rem);"></div>
+                <p class="text-body text-gray-600 max-w-3xl mx-auto">Prêt à transformer vos espaces ? Parlons de votre projet dès maintenant !</p>
+            </div>
+            
+            <div class="responsive-grid-2">
+                <!-- Informations de contact -->
+                <div class="animate-slide-right">
+                    <h3 class="text-card font-bold text-brand-blue mb-8 lg:mb-10">Nos Coordonnées</h3>
+                    <div class="space-y-6 lg:space-y-8">
+                        <div class="flex items-start group creative-hover hover-lift">
+                            <div class="creative-gradient smooth-corners flex items-center justify-center mr-4 morphing-shape group-hover:scale-110 transition-all duration-300 flex-shrink-0" style="width: clamp(3rem, 8vw, 4rem); height: clamp(3rem, 8vw, 4rem);">
+                                <i class="fas fa-map-marker-alt text-white" style="font-size: clamp(1rem, 2.5vw, 1.25rem);"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-card text-gray-900 mb-2">Notre Adresse</h4>
+                                <p class="text-gray-600 text-body">Lomé, Togo</p>
+                                <p class="text-sm text-gray-500 mt-1">Au cœur de la capitale togolaise</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start group creative-hover hover-lift">
+                            <div class="creative-gradient-reverse smooth-corners flex items-center justify-center mr-4 morphing-shape group-hover:scale-110 transition-all duration-300 flex-shrink-0" style="width: clamp(3rem, 8vw, 4rem); height: clamp(3rem, 8vw, 4rem);">
+                                <i class="fas fa-phone text-white" style="font-size: clamp(1rem, 2.5vw, 1.25rem);"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-card text-gray-900 mb-2">Téléphone</h4>
+                                <p class="text-gray-600 text-body font-semibold">+228 96 375 752</p>
+                                <p class="text-sm text-gray-500 mt-1">Disponible 7j/7 pour vos urgences</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start group creative-hover hover-lift">
+                            <div class="creative-gradient smooth-corners flex items-center justify-center mr-4 morphing-shape group-hover:scale-110 transition-all duration-300 flex-shrink-0" style="width: clamp(3rem, 8vw, 4rem); height: clamp(3rem, 8vw, 4rem);">
+                                <i class="fas fa-clock text-white" style="font-size: clamp(1rem, 2.5vw, 1.25rem);"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-card text-gray-900 mb-2">Horaires</h4>
+                                <p class="text-gray-600 text-body">Lun - Sam: 7h00 - 18h00</p>
+                                <p class="text-gray-600 text-body">Dimanche: Sur rendez-vous</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte Creative Responsive -->
+                    <div class="mt-8 lg:mt-12">
+                        <h4 class="font-bold text-card text-gray-900 mb-6">Notre Localisation</h4>
+                        <div class="creative-card smooth-corners flex items-center justify-center creative-hover hover-lift overflow-hidden" style="height: clamp(200px, 30vw, 320px);">
+                            <div class="text-center text-gray-600">
+                                <div class="creative-gradient rounded-full flex items-center justify-center mx-auto mb-4 morphing-shape" style="width: clamp(4rem, 10vw, 6rem); height: clamp(4rem, 10vw, 6rem);">
+                                    <i class="fas fa-map-marked-alt text-white" style="font-size: clamp(1.5rem, 4vw, 2rem);"></i>
+                                </div>
+                                <p class="text-card font-bold text-brand-blue">Carte Interactive</p>
+                                <p class="text-body">Google Maps</p>
+                                <p class="text-sm text-gray-500 mt-2">Lomé, Togo - Facile d'accès</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact créatif responsive -->
+                <div class="animate-slide-up">
+                    <div class="creative-card smooth-corners card-padding">
+                        <h3 class="text-card font-bold text-brand-red mb-6 lg:mb-8 text-center">Demander un Devis Gratuit</h3>
+                        <form id="contact-form" class="space-y-4 lg:space-y-6">
+                            <div class="form-grid grid grid-cols-1 md:grid-cols-2 element-gap">
+                                <div>
+                                    <label for="nom" class="block text-sm font-bold text-gray-700 mb-3">Nom complet *</label>
+                                    <input type="text" id="nom" name="nom" required class="w-full px-4 lg:px-6 py-3 lg:py-4 border-2 border-gray-200 smooth-corners focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all duration-300 hover:border-brand-blue">
+                                </div>
+                                <div>
+                                    <label for="telephone" class="block text-sm font-bold text-gray-700 mb-3">Téléphone</label>
+                                    <input type="tel" id="telephone" name="telephone" class="w-full px-4 lg:px-6 py-3 lg:py-4 border-2 border-gray-200 smooth-corners focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all duration-300 hover:border-brand-red">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-gray-700 mb-3">Email *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 lg:px-6 py-3 lg:py-4 border-2 border-gray-200 smooth-corners focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all duration-300 hover:border-brand-blue">
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-sm font-bold text-gray-700 mb-3">Service souhaité</label>
+                                <select id="service" name="service" class="w-full px-4 lg:px-6 py-3 lg:py-4 border-2 border-gray-200 smooth-corners focus:ring-2 focus:ring-brand-red focus:border-transparent transition-all duration-300 hover:border-brand-red">
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="entretien">🔧 Entretien Professionnel</option>
+                                    <option value="nettoyage">🧹 Nettoyage Spécialisé</option>
+                                    <option value="decoration">🎨 Décoration Créative</option>
+                                    <option value="multiple">✨ Pack Complet</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-bold text-gray-700 mb-3">Décrivez votre projet *</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-4 lg:px-6 py-3 lg:py-4 border-2 border-gray-200 smooth-corners focus:ring-2 focus:ring-brand-blue focus:border-transparent transition-all duration-300 hover:border-brand-blue resize-none" placeholder="Parlez-nous de votre projet, vos besoins, vos attentes..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full creative-button text-white smooth-corners font-bold hover:scale-105 transition-all duration-300 gentle-shadow" style="padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem); min-height: 48px;">
+                                <i class="fas fa-paper-plane mr-3"></i>Envoyer ma demande
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Creative -->
+    <footer class="creative-gradient text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 right-10 w-32 h-32 bg-white rounded-full animate-bounce-slow"></div>
+            <div class="absolute bottom-10 left-10 w-24 h-24 bg-white morphing-shape animate-float"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div class="md:col-span-2">
+                    <h3 class="text-4xl font-black text-yellow-300 mb-6">BENEDICTA DECO ENJ</h3>
+                    <p class="text-lg opacity-90 mb-8 leading-relaxed">Votre partenaire de confiance pour transformer et sublimer vos espaces à Lomé, Togo. Excellence, créativité et innovation à votre service.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300 hover:scale-110">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="hover:text-yellow-300 transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-sm"></i>Entretien Expert</a></li>
+                        <li><a href="#services" class="hover:text-yellow-300 transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-sm"></i>Nettoyage Pro</a></li>
+                        <li><a href="#services" class="hover:text-yellow-300 transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-sm"></i>Décoration Créative</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-300 transition-colors duration-300 flex items-center"><i class="fas fa-arrow-right mr-2 text-sm"></i>Devis Gratuit</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Contact Rapide</h4>
+                    <div class="space-y-4">
+                        <p class="flex items-center"><i class="fas fa-map-marker-alt mr-3 text-yellow-300"></i>Lomé, Togo</p>
+                        <p class="flex items-center"><i class="fas fa-phone mr-3 text-yellow-300"></i>+228 96 375 752</p>
+                        <p class="flex items-center"><i class="fas fa-clock mr-3 text-yellow-300"></i>7j/7 - 7h à 18h</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white border-opacity-20 mt-16 pt-8 text-center">
+                <p class="text-lg">&copy; 2024 <span class="font-bold text-yellow-300">BENEDICTA DECO ENJ</span>. Tous droits réservés. Créé avec ❤️ à Lomé.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Scroll to contact function
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Enhanced form submission with creative feedback
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const nom = formData.get('nom');
+            const email = formData.get('email');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!nom || !email || !message) {
+                // Creative error message
+                showNotification('Veuillez remplir tous les champs obligatoires ! 📝', 'error');
+                return;
+            }
+            
+            // Simulate form submission with creative loading
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-3"></i>Envoi en cours...';
+            submitBtn.disabled = true;
+            submitBtn.classList.add('animate-pulse');
+            
+            setTimeout(() => {
+                showNotification('🎉 Merci ! Votre demande a été envoyée avec succès. Nous vous contacterons très bientôt !', 'success');
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('animate-pulse');
+            }, 2500);
+        });
+
+        // Creative notification system
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.className = `fixed top-24 right-4 z-50 p-6 rounded-2xl shadow-2xl transform translate-x-full transition-all duration-500 max-w-md ${
+                type === 'success' ? 'bg-green-500 text-white' : 'bg-red-500 text-white'
+            }`;
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <div class="mr-3">
+                        <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-triangle'} text-2xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-medium">${message}</p>
+                    </div>
+                    <button onclick="this.parentElement.parentElement.remove()" class="ml-4 text-white hover:text-gray-200">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full');
+            }, 100);
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    if (notification.parentElement) {
+                        notification.remove();
+                    }
+                }, 500);
+            }, 5000);
+        }
+
+        // Enhanced navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('backdrop-blur-xl', 'bg-white', 'bg-opacity-90');
+                navbar.classList.remove('glass-effect');
+            } else {
+                navbar.classList.remove('backdrop-blur-xl', 'bg-white', 'bg-opacity-90');
+                navbar.classList.add('glass-effect');
+            }
+        });
+
+        // Advanced scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                    
+                    // Add staggered animation to children
+                    const children = entry.target.querySelectorAll('.creative-hover, .creative-card');
+                    children.forEach((child, index) => {
+                        setTimeout(() => {
+                            child.style.animationDelay = `${index * 0.1}s`;
+                            child.classList.add('animate-slide-up');
+                        }, index * 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections and cards
+        document.querySelectorAll('section, .creative-card').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Parallax effect for floating elements
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.floating-elements');
+            
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Interactive hover effects for service cards
+        document.querySelectorAll('.creative-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Dynamic gradient animation speed based on scroll
+        window.addEventListener('scroll', function() {
+            const scrollPercent = window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight);
+            const gradientElements = document.querySelectorAll('.creative-gradient, .creative-gradient-reverse');
+            
+            gradientElements.forEach(element => {
+                element.style.animationDuration = `${8 - (scrollPercent * 4)}s`;
+            });
+        });
+    </script>
+</body>
+</html>
